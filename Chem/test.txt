@@ -1,0 +1,4 @@
+﻿aaabbcccc
+abc -> aab
+ac -> ab
+cb -> cc
