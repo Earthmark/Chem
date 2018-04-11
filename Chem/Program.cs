@@ -10,20 +10,18 @@ namespace Chem
     {
       var text = File.ReadAllText(args[0]);
       var (counter, transforms) = ChemBuilder.Parse(text);
-      var span = 3;
 
       var areEqual =
-        from s1 in counter.Apply(transforms, span)
-        from s2 in s1.Apply(transforms, span)
-        from s3 in s1.Apply(transforms, span)
+        from s1 in counter.Apply(transforms)
+        from s2 in s1.Apply(transforms)
+        from s3 in s2.Apply(transforms)
         where s3.Values.Select(kvp => kvp.Value as int?).Aggregate((v1, v2) => v1 == v2 ? v1 : null) != null
-        select s3;
+        select (s1, s2, s3);
 
-      foreach (var result in areEqual.Select(ite => ite.ToString()).Distinct())
+      foreach (var result in areEqual.Select(ite => ite.ToString()))
       {
         Console.WriteLine(result);
       }
-
     }
   }
 }

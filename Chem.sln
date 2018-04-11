@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chem", "Chem\Chem.csproj", "{C3DDA35C-91AF-4940-9E05-F1F92332B8E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chem.Test", "Chem.Test\Chem.Test.csproj", "{1A7BE6B2-412F-4A42-8BB6-EAD92A52DA0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C3DDA35C-91AF-4940-9E05-F1F92332B8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3DDA35C-91AF-4940-9E05-F1F92332B8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3DDA35C-91AF-4940-9E05-F1F92332B8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7BE6B2-412F-4A42-8BB6-EAD92A52DA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7BE6B2-412F-4A42-8BB6-EAD92A52DA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7BE6B2-412F-4A42-8BB6-EAD92A52DA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7BE6B2-412F-4A42-8BB6-EAD92A52DA0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
